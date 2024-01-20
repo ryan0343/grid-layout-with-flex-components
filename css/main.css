@@ -1,27 +1,62 @@
+/* ==== Default Code ==== */
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #222;
-  }
-  
-  .emoji {
+}
+
+.emoji {
     border: 1px solid #222;
     border-radius: 8px;
     padding: 1rem;
-  }
-  
-  .emoji h2 {
+}
+
+.emoji h2 {
     margin: 0;
     border-bottom: 2px solid #ccc;
-  }
-  
-  .emoji a {
+}
+
+.emoji a {
     text-decoration: none;
     background-color: #781BAA;
     color: white;
     padding: 1rem;
     border-radius: 8px;
-  }
-  
-  .icon {
+}
+
+.icon {
     font-size: 4rem;
-  }
+}
+
+/* *****ASSIGNMENT work****** */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Uses emojis as the primary container for the cards in grid*/
+.emojis {
+    display: grid;
+    grid-template-columns: repeat(2, 425px);
+    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+
+/* emoji is the individual card and container for flex items w/in */
+/* Although .emoji is called earlier in the default code, I am keeping them seperate for now as to make clear my changes to the css. */
+.emoji {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Arranges the emoji icon first in the list of items */
+.emoji .icon {
+    order: -1;
+    align-self: center;
+}
+
+/* Sets a margin above the button that takes up all available space.*/
+.emoji a {
+    margin-top: auto;
+}
