@@ -39,7 +39,7 @@ main {
     grid-template-columns: repeat(2, 425px);
     grid-template-rows: repeat(2, auto);
     grid-auto-rows: auto;
-    gap: 20px;
+    gap: 15px;
 }
 
 /* emoji is the individual card and container for flex items w/in */
